@@ -1,0 +1,78 @@
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "segoe ui", sans-serif;
+    background-color: black;
+}
+a {
+    position: relative;
+	width: 25vw;
+    height: 31.75vw;
+    padding: 2vw;
+    text-decoration: none;
+}
+a>.icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 21vw;
+    width: 21vw;
+    border-radius: 2vw;
+    font-size: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a:hover {
+    background-color: #4a4a4f;
+}
+a>.name {
+    position: absolute;
+    top: 23vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.75vw;
+    width: 21vw;
+    font-size: 3vw;
+    color: rgba(249, 249, 250, 0.8);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex {
+    width: 75vw;
+	padding-top: 6.25vw;
+	padding-bottom: 6.25vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-facebook { background-image: url("./facebook.svg") }
+.img-notepad { background-image: url("./notepad.png") }
+.img-noaa { background-image: url("./noaa.svg") }
+.img-reddit { background-image: url("./reddit.svg"); background-size: 75% !important }
+.bg-scryfall { background-image: linear-gradient(180deg, rgba(130,84,137,1) 0%, rgba(95,134,146,1) 100%) }
+.img-scryfall { background-image: url("./scryfall.svg"); background-size: 90% !important }
+</style>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+</head>
+<body>
+<div class=container>
+<div class=flex>
+<a href="https://www.facebook.com"><span class="icon img-facebook" ></span><span class=name>Facebook</span></a>
+<a href="https://bejbej.github.io/mtgdecks2"><span class=icon style="background-color:#313131;color:white">M</span><span class=name>MTG Decks</span></a>
+<a href="https://bejbej.github.io/notepad"><span class="icon img-notepad" ></span><span class=name>Notepad</span></a>
+<a href="https://radar.weather.gov/Conus/full.php"><span class="icon img-noaa"  style="background-color:white"></span><span class=name>Radar</span></a>
+<a href="https://www.reddit.com/r/all"><span class="icon img-reddit"  style="background-color:orangered"></span><span class=name>Reddit</span></a>
+<a href="https://scryfall.com"><span class="icon bg-scryfall"></span><span class="icon img-scryfall" style=></span><span class=name>Scryfall</span></a>
+</div>
+</div>
+</body>
